@@ -4,8 +4,6 @@
 # 访问地址：http://localhost:9000
 # 账号密码：admin/JW_3y4jh2vJWC
 
-
-version: '3'
 services:
   sonarqube:
     image: sonarqube:community
@@ -21,7 +19,7 @@ services:
       SONAR_JDBC_PASSWORD: sonar
     volumes:
       - sonarqube_data:/opt/sonarqube/data
-      - ./extensions:/opt/sonarqube/extensions  # 挂载本地插件目录
+      #- ./extensions:/opt/sonarqube/extensions  # 挂载本地插件目录
     # 解决Elasticsearch内存限制问题
     ulimits:
       nofile:
