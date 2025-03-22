@@ -2,7 +2,6 @@
 # 停止命令：docker-compose down
 # 查看日志：docker-compose logs
 # 访问地址：http://localhost:9000
-# 账号密码：admin/JW_3y4jh2vJWC
 
 services:
   sonarqube:
